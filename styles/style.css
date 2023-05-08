@@ -1,0 +1,634 @@
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.cabecera__3d__inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 25px 0px;
+}
+
+.cabecera__3d{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding: 25px 0px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.logo__nombre{
+    font-family: 'Prata', serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A7AE4;
+    text-decoration: none;
+    margin-block: auto;
+    padding: 10px;
+}   
+
+.search{
+    background: #F5F5F5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px 16px;
+    width: 393px;
+    height: 40px;
+    line-height: 16px;
+    justify-content: space-between;
+    margin: 0 0 0 120px;
+}
+.search__movile{
+    display: none;
+}
+
+.search__box{
+    border: none;
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    width: 80%;
+}
+.search__box:focus{
+    outline: none;
+}
+
+.search__img{
+    border: none;
+    background: none;
+}
+
+.login__search{
+    margin-block: auto;
+    padding: 10px 40px;
+    border: #2A7AE4 2px solid;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login__search:hover {
+    background: #F5EEF8;
+    transition: 0.5s;
+}
+
+
+.btn__blanco{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.img__banner{
+    width: 100%;
+}
+.banner__imagen{
+    position: relative;
+}
+
+.banner__informacion{
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.banner__titulo{
+    font-family:'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    line-height:80px;
+}
+
+.banner__parrafo{
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.btn__azul{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    margin-block: auto;
+    padding: 10px 25px;
+    color: white;
+    background: #2A7AE4;
+}
+.btn__azul:hover {
+    background: #4682B4;
+    transition: 0.5s;
+}
+
+/*seccion impresiones3d*/
+
+.inicial{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 30px 0 10px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.ver__todo{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    gap: 5px;
+}
+.ver__todo__nombre{
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+.img__producto{
+    width: 170px;
+    height:180px;
+}
+.impresiones3D{
+    display: flex;
+    gap:35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto{
+    position: relative;
+
+}
+.producto__datos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.personalizados{
+    display: flex;
+    gap:35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elementos{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+    padding: 0 0 20px;
+    flex-wrap: wrap;
+}
+
+
+.producto__datos{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.precio{
+    font-weight: 900;
+}
+
+.ver{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*información*/
+
+.contacto{
+    background: #EAF2FD;
+}
+
+.logo__footer{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.logo__movile{
+    display: none;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.informacion__navegacion__links{
+    text-decoration: none;
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.contacto__titulo{
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.contacto__formulario{
+    max-width: 33%;
+}
+
+.formulario__contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.input__label {
+    font-family: 'Raleway';
+    font-size: 10px;
+    margin: 5px;
+}
+
+.formulario__input {
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 8px;
+    background: white;
+}
+
+.formulario__input{
+    outline: none;
+}
+.input__message__error {
+    font-family: 'Raleway';
+    font-size: 9px;
+    color: red;
+    display: none;
+}
+
+.formulario__textarea{
+    max-width: 95%;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 8px;
+}
+
+.formulario__textarea{
+    outline: none;
+}
+
+.formulario__enviar{
+    padding: 10px 0;
+}
+.formulario__boton{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    margin-block: auto;
+    padding: 5px 20px;
+    color: white;
+    background: #2A7AE4;
+    border: none;
+}
+
+.formulario__boton:hover {
+    background: #4682B4;
+    transition: 0.5s;
+}
+
+.footer{
+    padding: 30px;
+}
+
+.footer__rodape{
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+@media (max-width: 1050px) {
+    .container{
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    .search{
+        margin: auto;
+        width: auto;
+    }
+    
+    .search__movile{
+        display: none;
+    }
+
+    .hide-xs{
+        display: none;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .impresiones3D{
+        gap: 6px;
+    }
+
+    .personalizados{
+        gap: 6px;
+    }
+
+    .elementos{
+        gap:6px
+    }
+
+    .logo__footer{
+        display: none;
+    }
+
+    .logo__movile{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+
+    .informacion{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 550px) {
+    .informacion{
+        display: block;
+        padding: 0;
+        max-width: 500px;
+    }
+
+    .informacion__navegacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+
+    }
+
+    .banner__titulo{
+        font-size: 20px;
+        line-height: 15px;
+        font-weight: 400;
+    }
+
+    .banner__parrafo{
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 200;
+    }
+
+    .btn__azul{
+            font-size: 12px;
+            padding: 8px 15px;
+    }
+    .contacto__formulario{
+        max-width: 95%;
+    }
+
+    .formulario__contacto{
+        width: 100%;
+    }
+
+    .formulario__textarea{
+        width: 95%;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 450px) {
+    .container{
+        max-width: 360px;
+        margin: auto;
+    }
+    .cabecera__3d__inicio{
+        position: relative;
+    }
+    .logo__imagen{
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .logo__nombre{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .search{
+        display: none;
+    }
+
+    .search__movile{
+        display: flex;
+        align-items: center;
+    }
+
+    .search__box__movile{
+        background: #F5F5F5;
+        border-radius: 20px;
+        align-items: center;
+        padding: 1px 8px;
+        height: 30px;
+        line-height: 16px;
+        justify-content: space-between;
+        top: 80px;
+        transition: all .5s;
+        box-sizing: border-box;
+        border: none;
+    }
+    
+    .checkbox{
+        opacity: 0;
+    }
+    .checkbtn {
+        display: block;
+    }
+
+    .search__movile__see{
+        display: none;
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        background: #F5F5F5;
+        border-radius: 20px;
+    }
+
+    #check:checked ~ .search__movile__see {
+        display: block;
+        transition: all .5s;
+    }
+
+    .search__movile__see form {
+        display: flex;
+        /* flex-direction: row; */
+        /* flex: 1; */
+    }
+    
+    /*login*/
+    .login__search{
+        padding: 8px 20px;
+    }
+
+    .banner__titulo{
+        font-size: 20px;
+        line-height: 15px;
+        font-weight: 400;
+    }
+
+    .banner__parrafo{
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 200;
+    }
+
+    .btn__azul{
+            font-size: 12px;
+            padding: 8px 15px;
+    }
+
+    .hide-xs{
+        display: none;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .impresiones3D{
+        gap: 10px;
+    }
+
+    .personalizados{
+        gap: 10px;
+    }
+
+    .elementos{
+        gap:10px
+    }
+
+    .titulo{
+        font-size: 22px;
+    }
+
+    .logo__footer{
+       display: none;
+    }
+
+    .logo__movile{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+    .informacion{
+        display: block;
+        padding: 0;
+    }
+
+    .informacion__navegacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+
+    }
+
+    .contacto__formulario{
+        max-width: 95%;
+    }
+
+    .formulario__contacto{
+        width: 100%;
+    }
+
+    .formulario__textarea{
+        width: 95%;
+    }
+
+    .formulario__boton{
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container{
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .impresiones3D{
+        gap: 5px;
+    }
+
+    .personalizados{
+        gap: 5px;
+    }
+
+    .elementos{
+        gap:5px
+    }
+
+}

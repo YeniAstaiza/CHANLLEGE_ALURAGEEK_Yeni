@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Agregar_emprendimiento</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/agregar__producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Prata&family=Raleway:wght@300&display=swap"
+rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="container">
+            <div class="cabecera__3d__inicio">
+                <a href="index.html" class="logo">
+                    <img src="./IMG/logo.png" alt="impresiones 3D" class="logo__imagen">
+                    <span class="logo__nombre">Impresiones 3D</span>
+                </a>
+                <form class="search">
+                    <input type="text" placeholder="¿Qué deseas buscar?" class="search__box">
+                    <button type="submit" class="search__img"><img src="../CHANLLEGES_ALURAGEEK/IMG/Vector.png"
+                            alt="logosearch"></button>
+                </form>
+                <div class="login__search">
+                    <a href="login.html" class="btn__blanco">Menú administrador</a>
+                </div>
+
+                <div class="search__movile">
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbtn">
+                        <img src="./IMG/Vector.png"
+                        alt="logosearch">
+                    </label>
+                    <div class="search__movile__see">
+                        <form>
+                            <input type="text" placeholder="¿Qué deseas buscar?" class="search__box__movile">
+                            <button type="submit" class="search__img"><img src="./IMG/Vector.png"
+                                alt="logosearch"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <content>
+        <section class="nuevo">
+            <div class="container">
+                <div class="nuevo__sesion">
+                    <form class="nuevo__form" name="form" id="nuevo">
+                        <h1 class="nuevo__titulo">Agregar Nuevo producto</h1>
+
+                        <div class="nuevo__producto" id="url">
+                            <label class="nuevo__label" for="url">Url imagen</label>
+                            <input class="nuevo__input" type="url" name="url" placeholder="Url imagen"
+                                minlength="10" maxlength="50" required data-tipo="url">
+                            <span class="input__message__error">El campo no cumple</span>
+                        </div>
+
+                        <div class="nuevo__producto" id="nuevo__categoria">
+                            <label class="nuevo__label" for="categoria">Categoría</label>
+                            <input class="nuevo__input" type="text" name="categoria" placeholder="Escriba la categoría"
+                                minlength="10" maxlength="50" required data-tipo="categoria">
+                            <span class="input__message__error">El campo no cumple</span>
+                        </div>
+
+                        <div class="nuevo__producto" id="nuevo__nombre">
+                            <label class="nuevo__label" for="nombre">Nombre producto</label>
+                            <input class="nuevo__input" type="text" name="nombre" placeholder="Escriba el nombre del producto"
+                                minlength="10" maxlength="50" required data-tipo="nombre">
+                            <span class="input__message__error">El campo no cumple</span>
+                        </div>
+
+                        <div class="nuevo__producto" id="nuevo__precio">
+                            <label class="nuevo__label" for="numero">Precio</label>
+                            <input class="nuevo__input" type="text" name="numero" placeholder="Escriba el valor del producto"
+                                minlength="3" maxlength="10" required data-tipo="numero">
+                            <span class="input__message__error">El campo no cumple</span>
+                        </div>
+
+                        <textarea class="nuevo__textarea" rows="5" cols="200" id="mensage" name="mensaje"
+                                placeholder="Mensaje"></textarea>
+
+                        <div class="nuevo__enviar"><button type="submit" class="nuevo__boton">Enviar</button>
+                            <p class="nuevo::mensaje__exito" id="nuevo__mensaje__exito"></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="container">
+                <div class="informacion">
+                    <div class="logo">
+                        <a href="./Index.html" class="logo">
+                            <img src="./IMG/logo.png" alt="impresiones 3D" class="logo__imagen">
+                            <span class="logo__nombre">Impresiones 3D</span>
+                        </a>
+                    </div>
+
+                    <div class="informacion__navegacion">
+                        <ul class="navegacion">
+                            <li><a href="#" class="informacion__navegacion__links">Quienes somos</a></li>
+                            <li><a href="#" class="informacion__navegacion__links">Política de privacidad</a></li>
+                            <li><a href="#" class="informacion__navegacion__links">Programa de fidelidad</a></li>
+                            <li><a href="#" class="informacion__navegacion__links">Nuestras tiendas</a></li>
+                            <li><a href="#" class="informacion__navegacion__links">Quiero ser franquiciado</a></li>
+                            <li><a href="#" class="informacion__navegacion__links">Anúncie aquí</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contacto__formulario">
+                        <h2 class="contacto__titulo">Hable con nosotros</h2>
+                        <form class="formulario__form" name="form" id="formulario">
+                            <div class="formulario__contacto" id="formulario__nombre">
+                                <label class="input__label" for="nombre">Nombre</label>
+                                <input class="formulario__input" type="text" name="nombre" placeholder="Nombre"
+                                    minlength="3" maxlength="50" required data-tipo="nombre">
+                                <span class="input__message__error">El campo no cumple</span>
+                            </div>
+
+                            <textarea class="formulario__textarea" rows="5" cols="200" id="mensage" name="mensaje"
+                                placeholder="Mensaje"></textarea>
+
+                            <div class="formulario__enviar"><button type="submit" class="formulario__boton">Enviar
+                                    mensaje</button>
+                                <p class="formulario::mensaje__exito" id="formulario__mensaje__exito"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer__container">
+                <div class="footer__rodape">
+                    <p>Desarrollado por Yeni Astaiza</p>
+                    <p>2023</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </content>
+</body>
+
+</html>
